@@ -1,13 +1,18 @@
+@import "./utils/vars.scss";
+@import "./navigation.scss";
+
 .header {
   background-color: black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.698);
 
   &__container {
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
   
-    height: 72px;
+    height: $header_height;
   }
 
   &__logo {
@@ -26,6 +31,27 @@
 
     &:hover {
       opacity: 1;
+    }
+
+    &--expanded {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      height: 100vh;
+
+      background-color: black;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(-150%);
+      transition: transform 0.3s;
+
+      &:target {
+        transform: translateY(0);
+      }
     }
   }
 }

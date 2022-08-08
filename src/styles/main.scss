@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
 @import "./utils/mixins.scss";
+@import "./header.scss";
 
-body {
+.body {
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.body--with-menu {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+
+  max-width: 280px;
+
+  @include onTablet {
+    max-width: 620px;
+  }
+
+  @include onDesktop {
+    max-width: 1121px;
+  }
 }

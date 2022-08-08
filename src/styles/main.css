@@ -1,6 +1,53 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
+.header {
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.698);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+.header__logo {
+  display: inline-block;
+}
+.header__logo--image {
+  width: 80px;
+}
+.header__menu {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.header__menu:hover {
+  opacity: 1;
+}
+
+.body {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body--with-menu {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 280px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 620px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 2559px) {
+  .container {
+    max-width: 1121px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

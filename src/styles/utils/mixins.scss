@@ -9,3 +9,15 @@
     @content;
   }
 }
+
+@mixin regularParagraph {
+  font-size: 14px;
+  color: #86878b;
+  line-height: 20px;
+}
+
+@mixin regularHeading {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+}

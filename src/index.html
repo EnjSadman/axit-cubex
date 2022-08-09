@@ -12,7 +12,13 @@
 <body class="body">
   <header>
     <div class="header">
-      <div class="container header__container">
+      <div
+        class="
+          container
+          container--regular
+          header__container
+        "
+      >
         <a class="header__logo" href="#">
           <img
             class="header__logo--image"
@@ -25,7 +31,13 @@
         </a>
       </div>
       <div id="menu" class="header__menu--expanded">
-        <div class="header__container container">
+        <div 
+        class="
+          header__container
+          container--regular
+          container
+        "
+        >
           <a class="header__logo" href="#">
             <img
               class="header__logo--image"
@@ -38,7 +50,7 @@
           </a>
         </div>
         <nav class="header__navigation navigation">
-          <a class="navigation__link" href="#">
+          <a class="navigation__link" href="#about">
             Features
           </a>
           <a class="navigation__link" href="#">
@@ -56,6 +68,70 @@
         </nav>
       </div>
     </div>
-  </header>  
+  </header>
+  <section id="about">
+    <div class=" about container container--wide">
+      <div class="container container--regular">
+        <a class="about__logo" href="#">
+          <img class="about__logo--image" src="./images/Logo.png" alt="Atix-logo">
+        </a>
+        <h1 class="about__heading">
+          MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+        </h1>
+        <p class="about__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+          accumsan et viverra justo commodo.
+        </p>
+        <button
+          type="button"
+          class="about__button"
+        >
+          Download
+        </button>
+      </div>
+      <div
+        class="
+          container
+          container-regular
+          about__social
+          social
+        "
+      >
+      <div class="social__heading">
+        <h1 class="social__heading--title">
+          Social Media
+        </h1>
+        <p class="social__heading--paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet.
+        </p>
+      </div>
+        <div class="social__icons">
+          <a class="social__icons--icon" href="#">
+            <i class="fa-brands fa-xl fa-facebook-f"></i>
+          </a>
+          <a class="social__icons--icon" href="#">
+            <i class="fa-brands fa-xl fa-twitter"></i>
+          </a>
+          <a class="social__icons--icon" href="#">
+            <i class="fa-brands fa-xl fa-google-plus-g"></i>
+          </a>
+          <a class="social__icons--icon" href="#">
+            <i class="fa-brands fa-xl fa-pinterest"></i>
+          </a>
+          <a class="social__icons--icon" href="#">
+            <i class="fa-brands fa-xl fa-instagram"></i>
+          </a>
+          <a class="social__icons--icon" href="#">
+            <i class="fa-solid fa-xl fa-rss"></i>
+          </a>
+          <a class="social__icons--icon" href="#">
+            <i class="fa-brands fa-xl fa-stumbleupon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
